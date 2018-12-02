@@ -49,7 +49,8 @@ func getPreviousPixel(user, token, graph string) (string, string) {
 		return "-1", "-1"
 	}
 
-	quantity := strconv.FormatFloat(q, 'f', 4, 64)
+	qi := int(q)
+	quantity := strconv.Itoa(qi)
 
 	return today, quantity
 }
